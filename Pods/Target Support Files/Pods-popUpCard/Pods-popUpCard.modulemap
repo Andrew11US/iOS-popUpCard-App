@@ -1,0 +1,6 @@
+framework module Pods_popUpCard {
+  umbrella header "Pods-popUpCard-umbrella.h"
+
+  export *
+  module * { export * }
+}

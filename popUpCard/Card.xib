@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dJk-sd-8Td" customClass="Card" customModule="popUpCard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oiq-AM-RZA">
+                    <rect key="frame" x="16" y="20" width="268" height="260"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oiq-AM-RZA" secondAttribute="bottom" constant="20" id="7cL-am-ief"/>
+                <constraint firstAttribute="trailing" secondItem="oiq-AM-RZA" secondAttribute="trailing" constant="16" id="FbC-1t-Dsf"/>
+                <constraint firstItem="oiq-AM-RZA" firstAttribute="leading" secondItem="dJk-sd-8Td" secondAttribute="leading" constant="16" id="Myg-YU-3X9"/>
+                <constraint firstItem="oiq-AM-RZA" firstAttribute="top" secondItem="dJk-sd-8Td" secondAttribute="top" constant="20" id="S2I-16-WZQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="shapeImage" destination="oiq-AM-RZA" id="CbQ-n5-5uP"/>
+            </connections>
+            <point key="canvasLocation" x="17" y="-126"/>
+        </view>
+    </objects>
+</document>

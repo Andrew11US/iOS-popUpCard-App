@@ -12,6 +12,10 @@
 		01BBA971205DA7D700F9F473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA96F205DA7D700F9F473 /* Main.storyboard */; };
 		01BBA973205DA7D700F9F473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA972205DA7D700F9F473 /* Assets.xcassets */; };
 		01BBA976205DA7D700F9F473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA974205DA7D700F9F473 /* LaunchScreen.storyboard */; };
+		01BBA97E205DA89000F9F473 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA97D205DA89000F9F473 /* AnimationEngine.swift */; };
+		01BBA983205DA94B00F9F473 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA982205DA94B00F9F473 /* Card.swift */; };
+		01BBA985205DA9B400F9F473 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA984205DA9B400F9F473 /* Card.xib */; };
+		469E49C435C8974CC30F6FA8 /* Pods_popUpCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724FBB3FC8F4400DF7AC4C27 /* Pods_popUpCard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,13 @@
 		01BBA972205DA7D700F9F473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01BBA975205DA7D700F9F473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01BBA977205DA7D700F9F473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BBA97D205DA89000F9F473 /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
+		01BBA97F205DA8AB00F9F473 /* popUpCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "popUpCard-Bridging-Header.h"; sourceTree = "<group>"; };
+		01BBA982205DA94B00F9F473 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		01BBA984205DA9B400F9F473 /* Card.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
+		724FBB3FC8F4400DF7AC4C27 /* Pods_popUpCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_popUpCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA2BA57BEFF335B87F3FEBE /* Pods-popUpCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popUpCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-popUpCard/Pods-popUpCard.release.xcconfig"; sourceTree = "<group>"; };
+		F3E77426957977A87BC7CE12 /* Pods-popUpCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popUpCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-popUpCard/Pods-popUpCard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469E49C435C8974CC30F6FA8 /* Pods_popUpCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,8 @@
 			children = (
 				01BBA96A205DA7D600F9F473 /* popUpCard */,
 				01BBA969205DA7D600F9F473 /* Products */,
+				E1BA55EE22D79265BBA243CA /* Pods */,
+				5A8C84B1EEED7E21FF881A15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +70,33 @@
 			children = (
 				01BBA96B205DA7D700F9F473 /* AppDelegate.swift */,
 				01BBA96D205DA7D700F9F473 /* ViewController.swift */,
+				01BBA97D205DA89000F9F473 /* AnimationEngine.swift */,
+				01BBA982205DA94B00F9F473 /* Card.swift */,
+				01BBA984205DA9B400F9F473 /* Card.xib */,
 				01BBA96F205DA7D700F9F473 /* Main.storyboard */,
 				01BBA972205DA7D700F9F473 /* Assets.xcassets */,
 				01BBA974205DA7D700F9F473 /* LaunchScreen.storyboard */,
 				01BBA977205DA7D700F9F473 /* Info.plist */,
+				01BBA97F205DA8AB00F9F473 /* popUpCard-Bridging-Header.h */,
 			);
 			path = popUpCard;
+			sourceTree = "<group>";
+		};
+		5A8C84B1EEED7E21FF881A15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				724FBB3FC8F4400DF7AC4C27 /* Pods_popUpCard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1BA55EE22D79265BBA243CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3E77426957977A87BC7CE12 /* Pods-popUpCard.debug.xcconfig */,
+				CFA2BA57BEFF335B87F3FEBE /* Pods-popUpCard.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01BBA97A205DA7D700F9F473 /* Build configuration list for PBXNativeTarget "popUpCard" */;
 			buildPhases = (
+				BE87B8A07ABD9B1700A181AE /* [CP] Check Pods Manifest.lock */,
 				01BBA964205DA7D600F9F473 /* Sources */,
 				01BBA965205DA7D600F9F473 /* Frameworks */,
 				01BBA966205DA7D600F9F473 /* Resources */,
+				A23FCC08BABDE93E80FFC8A7 /* [CP] Embed Pods Frameworks */,
+				9A1A11E159F4945872051388 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +134,7 @@
 				TargetAttributes = {
 					01BBA967205DA7D600F9F473 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,10 +165,65 @@
 				01BBA976205DA7D700F9F473 /* LaunchScreen.storyboard in Resources */,
 				01BBA973205DA7D700F9F473 /* Assets.xcassets in Resources */,
 				01BBA971205DA7D700F9F473 /* Main.storyboard in Resources */,
+				01BBA985205DA9B400F9F473 /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A1A11E159F4945872051388 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-popUpCard/Pods-popUpCard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23FCC08BABDE93E80FFC8A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-popUpCard/Pods-popUpCard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-popUpCard/Pods-popUpCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE87B8A07ABD9B1700A181AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-popUpCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01BBA964205DA7D600F9F473 /* Sources */ = {
@@ -138,6 +232,8 @@
 			files = (
 				01BBA96E205DA7D700F9F473 /* ViewController.swift in Sources */,
 				01BBA96C205DA7D700F9F473 /* AppDelegate.swift in Sources */,
+				01BBA97E205DA89000F9F473 /* AnimationEngine.swift in Sources */,
+				01BBA983205DA94B00F9F473 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +368,18 @@
 		};
 		01BBA97B205DA7D700F9F473 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E77426957977A87BC7CE12 /* Pods-popUpCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PTRW36GG78;
 				INFOPLIST_FILE = popUpCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.losAngelesBoy.popUpCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "popUpCard/popUpCard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +387,17 @@
 		};
 		01BBA97C205DA7D700F9F473 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA2BA57BEFF335B87F3FEBE /* Pods-popUpCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PTRW36GG78;
 				INFOPLIST_FILE = popUpCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.losAngelesBoy.popUpCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "popUpCard/popUpCard-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
