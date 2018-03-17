@@ -44,5 +44,6 @@ class Card: UIView {
     func selectShape() {
 //        currentShape = shapes[Int(arc4random_uniform(4))]
         shapeImage.image = UIImage(named: shapes[0])
+        shapeImage.layer.cornerRadius = 15.0
     }
 }
